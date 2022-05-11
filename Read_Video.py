@@ -1,6 +1,6 @@
 import cv2
 
-#Use 0 for webcam
+#Usa 0 para la cámara web
 #vid = cv2.VideoCapture(0)
 
 vid = cv2.VideoCapture("AnthonyShkraba.mp4")
@@ -20,8 +20,8 @@ out = cv2.VideoWriter('Boxing.mp4',cv2.VideoWriter_fourcc(*'DIVX'), 30, (width,h
 
 while(True):
       
-    # Capture the video frame
-    # by frame
+    # Captura el video cuadro
+    # por cuadro
     ret, frame = vid.read()
 
     cv2.imshow("Web cam", frame)
